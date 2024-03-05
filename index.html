@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Synic</title>
 </head>
 <body>
-    <h1>I am hosting on GitHub Pages</h1>
+    <header>
+        <nav id="navbar">
+            <p id="navabout"><a href="#welcome-section">About</a></p>
+            
+            <p id="navwork"><a href="#projects">Work</a></p>
+                
+            <p id="navcontact"><a href="#contact">Contact</a></p>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <h1 id="intro">
+                <span id="mainintro">Hi, I am Synic</span><br>
+                <span id="subintro">I do code</span>
+            </h1>
+        </section>
+
+        <section id="projects">
+            <h2 id="projectheader">My Projects</h2>
+
+        <div id="articlecontainer">
+            <article class="project-tile">
+            <a href="https://synic-dx.github.io/blackJack/blackJack.html" target="_blank" rel="noopener">
+                <img id="blackjack-game" class="articleimg" src="Images/blackjack.png" alt="Blackjack Game">
+                <p class="articletext">blackJack</p>
+            </a>
+            </article>
+        </div>
+        </section>
+
+        <section id="contact">
+            <ul id="contact-list">
+                <li><a id="reddit-link" href="https://www.reddit.com/user/Shinjan128/" target="_blank">Reddit</a></li>
+                <li><a id="mail-link" target="_blank" href="mailto:shinjan1280@gmail.com">Email</a></li>
+                <li><a id="profile-link" target="_blank" href="https://github.com/Synic-dx">Github</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <credits> &copy;2024 Synic</credits>
+    </footer>
 </body>
 </html>

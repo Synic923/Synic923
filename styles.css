@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+    color: aliceblue;
+    width: 98.5vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 98.5vw;
+    height: 10vh;
+    background-color: black;
+    margin: 0;
+    padding: 3px 0;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 21px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 2vw;
+}
+
+#navabout, #navwork, #navcontact {
+    margin: 2vh 2vw;
+}
+
+main {
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:visited {
+    text-decoration: none;
+    
+}
+
+section#welcome-section {
+      background-color: rgb(3, 32, 66);
+      height: 100vh;
+      width: 98.5vw;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+}
+
+#intro {
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+    margin: auto;
+}
+
+#mainintro {
+    font-size: 4rem;
+    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 0;
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#subintro {
+    font-size: 2rem;
+    font-family: Kanit, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    right: 0;
+    font-weight: 300;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+}
+
+section#projects {
+    height: 70vh;
+    width: 98.5vw;
+    position: absolute;
+    margin: 0;
+    top: 99vh;
+    background-color: rgb(5, 89, 138);
+    column-gap: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projectheader {
+    margin-top: 4vh;
+    text-align: center;
+    margin: 0 auto 2vh auto;
+    font-family: Anta, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+#articlecontainer {
+    margin-top: 1vh;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+article {
+    width: 410px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+article:hover {
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.articleimg {
+    width: 410px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+}
+
+.articletext {
+    text-align: center;
+    margin-top: 0;
+    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-size: 1.4rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section#contact {
+    height: 20vh;
+    width: 98.5vw;
+    position: absolute;
+    margin: 0;
+    top: 169vh;
+    background-color: rgb(8, 11, 12);
+    column-gap: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer {
+    height: 5vh;
+    width: 98.5vw;
+    position: absolute;
+    margin: 0;
+    top: 189vh;
+    background-color: rgb(8, 11, 12);
+    column-gap: 3vw;
+    text-align: center;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+/*animation for project articles*/
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 21px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 21px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 21px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 21px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+
+/*animation for header*/
+  @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+/*animation for subheader*/
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  /* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    nav {
+        position: static; 
+        width: 100%;
+        justify-content: center;
+    }
+
+    #navabout, #navwork, #navcontact {
+        margin: 2vh 5vw;
+    }
+}
