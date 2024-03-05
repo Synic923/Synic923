@@ -81,6 +81,7 @@ a:visited {
   }
 
 section#welcome-section {
+      -webkit-background-image: url("Images/neonblack.jpg");
       background-image: url("Images/neonblack.jpg");
       background-repeat: no-repeat;
       background-size: cover;
