@@ -5,6 +5,8 @@
 
 * {
     box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
     font-size: 1.5em;
     color: aliceblue;
     width: 98.5vw;
+    text-shadow: 3px 3px 1.5px #1f1f1f;
 }
 
 header {
@@ -39,8 +42,12 @@ nav {
     right: 2vw;
 }
 
-#navabout, #navwork, #navcontact {
+.navitem {
     margin: 2vh 2vw;
+    font: bold 16px/1.6 'Open Sans', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    
 }
 
 main {
@@ -53,7 +60,7 @@ a {
 }
 
 a:hover {
-    color: yellow;
+    color: #04fcdb;
 }
 
 a:visited {
@@ -61,8 +68,22 @@ a:visited {
     
 }
 
+.hoveranimation {
+    transition: 0.5s;
+}
+
+.hoveranimation:hover {
+    color: #fff;
+    text-shadow: 0 0 1px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 10px #03e9f4,
+                0 0 20px #03e9f4;
+  }
+
 section#welcome-section {
-      background-color: rgb(3, 32, 66);
+      background-image: url("images/bg4.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
       height: 100vh;
       width: 98.5vw;
       margin: 0;
@@ -76,7 +97,6 @@ section#welcome-section {
     position: absolute;
     top: 35vh;
     text-align: center;
-    margin: auto;
 }
 
 #mainintro {
@@ -104,7 +124,9 @@ section#projects {
     position: absolute;
     margin: 0;
     top: 99vh;
-    background-color: rgb(5, 89, 138);
+    background: url("Images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     column-gap: 3vw;
     display: flex;
     flex-direction: column;
@@ -117,6 +139,7 @@ section#projects {
     margin: 0 auto 2vh auto;
     font-family: Anta, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
+    text-shadow: none;
 }
 
 #articlecontainer {
@@ -133,16 +156,35 @@ article {
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    --g: 2px;     /* the gap */
+  --b: 6px;    /* border thickness*/
+  --c: #04fcdb; /* the color */
+  
+  
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: .3s;
 }
 
 article:hover {
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            --_p: 75%;
+  filter: grayscale(0%);
+            
 }
 
 .articleimg {
-    width: 410px;
-    height: 200px;
+    width: 100%;
+    height: 80%px;
     border-radius: 10px 10px 0 0;
     margin-bottom: 0;
 }
@@ -165,12 +207,11 @@ section#contact {
     position: absolute;
     margin: 0;
     top: 169vh;
-    background-color: rgb(8, 11, 12);
+    background-color: rgb(0, 0, 0);
     column-gap: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #contact-list {
@@ -179,17 +220,78 @@ section#contact {
     justify-content: space-around;
 }
 
+.contactitem {
+    text-shadow: none;
+    transition: transform 0.3s ease-out;
+    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contactitem:hover {
+    transform: translateY(8px);
+    text-shadow: 3px 3px 1.5px #1f1f1f;
+}
+
+img#pfp {
+    margin: auto;
+    position: relative;
+    top: 20vh;
+    --b: 3px;     /* the border thickness*/
+    --g: 10px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+  img#pfp:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+
 footer {
     height: 5vh;
     width: 98.5vw;
     position: absolute;
     margin: 0;
     top: 189vh;
-    background-color: rgb(8, 11, 12);
+    background-color: rgb(0, 0, 0);
     column-gap: 3vw;
     text-align: center;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p#abouttext1 {
+    font-size: small;
+    position: absolute;
+    top: 75vh;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(40, end),
+}
+
+p#abouttext2 {
+    font-size: small;
+    position: absolute;
+    top: 80vh;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(40, end) 1s,
+}
+
+/*Animation for about*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
 /*animation for project articles*/
