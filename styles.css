@@ -59,9 +59,7 @@ a {
     color: aliceblue;
 }
 
-a:hover {
-    color: #04fcdb;
-}
+
 
 a:visited {
     text-decoration: none;
@@ -70,6 +68,11 @@ a:visited {
 
 .hoveranimation {
     transition: 0.5s;
+}
+
+#brackets {
+   color: rgb(0, 174, 255);
+   text-shadow: none;
 }
 
 .hoveranimation:hover {
@@ -225,13 +228,20 @@ section#contact {
 
 a.contactitem {
     text-shadow: none;
-    transition: transform 0.3s ease-out;
+    
     font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a.contactitem:hover {
-    transform: translateY(8px);
     text-shadow: 3px 3px 1.5px #1f1f1f;
+}
+
+.translateY {
+  transition: transform 0.3s ease-out;
+}
+
+.translateY:hover {
+  transform: translateY(5px);
 }
 
 img#pfp {
@@ -289,6 +299,29 @@ p#abouttext2 {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 1s steps(40, end) 1s,
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /*Animation for about*/
