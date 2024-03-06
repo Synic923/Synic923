@@ -20,3 +20,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     checkPosition();
 });
+
+const pfp = document.querySelector("#pfp");
+const subIntro = document.querySelector("#subintro");
+
+
+function expandIntro() {
+    // reset class to remove old animation
+    subIntro.className = "";
+
+    subIntro.innerHTML = 'I am learning Front-End Web Development at <a href="https://www.freecodecamp.org/Synic-dx" class="hoveranimation cyantext" target="_blank">freeCodeCamp.org</a>';
+    subIntro.style.marginTop = "20px";
+    subIntro.style.fontSize = "large";
+
+    // restart animation
+    void subIntro.offsetWidth; 
+    subIntro.className = "textswitched";
+}
+
+pfp.addEventListener('click', expandIntro);

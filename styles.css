@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kode+Mono:wght@400..700&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     -webkit-user-select: none;
     user-select: none;
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  }
 
 body {
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
@@ -59,7 +66,9 @@ a {
     color: aliceblue;
 }
 
-
+.cyantext {
+  color: #03e9f4;;
+}
 
 a:visited {
     text-decoration: none;
@@ -87,8 +96,7 @@ section#welcome-section {
       height: 100vh;
       width: 98.5vw;
       margin: 0;
-      position: absolute;
-      top: 0;
+      position: relative;
       display: flex;
       justify-content: center;
 }
@@ -110,55 +118,70 @@ section#welcome-section {
 
 #subintro {
     font-size: 2rem;
-    font-family: Kanit, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Kode Mono, Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     right: 0;
     text-shadow: none;
     font-weight: 300;
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+}
+
+.textswitch {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 }
 
+.textswitched {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
 section#projects {
-    height: 70vh;
+    height: fit-content;
     width: 98.5vw;
-    position: absolute;
+    position: relative;
     margin: 0;
-    top: 99vh;
+    padding: 7vh 5vw;
     background: url("Images/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    column-gap: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#projectheader {
-    margin-top: 4vh;
+#projectheader, #contactheader {
+    margin-top: 7vh;
     text-align: center;
-    margin: 0 auto 2vh auto;
+    margin: 0 auto 3vh auto;
     font-family: Anta, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     text-shadow: none;
+    color: #00ffff;
+}
+
+#contactheader {
+  margin-top: 5vh;
 }
 
 #articlecontainer {
-    margin-top: 1vh;
-    height: 250px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    height: fit-content;
+    margin: 5vh 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    column-gap: auto;
+    row-gap: auto;
+    justify-content: center;
 }
 article {
-    width: 410px;
-    height: 250px;
+    width: 350px;
+    height: 210px;
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    --g: 2px;     /* the gap */
-  --b: 6px;    /* border thickness*/
-  --c: #04fcdb; /* the color */
+    --g: 3px;     /* the gap */
+  --b: 5px;    /* border thickness*/
+  --c: #00ffea; /* the color */
   
   
   padding: calc(var(--g) + var(--b));
@@ -209,11 +232,11 @@ ul {
 }
 
 section#contact {
-    height: 20vh;
+    height: fit-content;
+    padding: 3vh 3vw 0 3w;
     width: 98.5vw;
-    position: absolute;
+    position: relative;
     margin: 0;
-    top: 169vh;
     background-color: rgb(0, 0, 0);
     column-gap: 3vw;
     display: flex;
@@ -225,16 +248,14 @@ section#contact {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 20vh 0 25vh -3vw;
+    font-size: 2rem;
 }
 
 a.contactitem {
     text-shadow: none;
     
     font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-a.contactitem:hover {
-    text-shadow: 3px 3px 1.5px #1f1f1f;
 }
 
 .translateY, .contacttranslateY {
@@ -246,7 +267,7 @@ a.contactitem:hover {
 }
 
 .contacttranslateY:hover {
-  transform: translateY(8px);
+  transform: translateY(12px);
 }
 img#pfp {
     margin: auto;
@@ -282,41 +303,19 @@ img#pfp {
     outline-offset: var(--g);
   }
 
-footer {
-    height: 5vh;
+  footer {
+    height: fit-content;
     width: 98.5vw;
-    position: absolute;
-    margin: 0;
-    top: 189vh;
+    margin: auto auto 5px auto;
     background-color: rgb(0, 0, 0);
-    column-gap: 3vw;
     text-align: center;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
     text-transform: uppercase;
-    text-shadow: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-p#abouttext1 {
-    font-size: small;
+    text-shadow: None;
     position: absolute;
-    top: 75vh;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 1s steps(40, end),
-}
-
-p#abouttext2 {
-    font-size: small;
-    position: absolute;
-    top: 80vh;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 1s steps(40, end) 1s,
+    bottom: 0px;
+    color: #00ffea;
 }
 
 .hover-underline-animation {
@@ -335,6 +334,29 @@ p#abouttext2 {
   background-color: #00ffff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+#mail-link {
+  color: #ff0000;
+}
+
+#mail-link::after {
+  background-color: #ff0000;
+}
+
+#reddit-link {
+  color: #ff7300;
+}
+
+#reddit-link::after {
+  background-color: #ff7300;
+}
+
+#profile-link {
+  color: #0837d1;
+}
+#profile-link::after {
+  background-color: #0837d1;
 }
 
 .hover-underline-animation:hover::after {
@@ -451,6 +473,19 @@ p#abouttext2 {
     #navabout, #navwork, #navcontact {
         margin: 2vh 5vw;
     }
-}
 
-/*background animation*/
+    #articlecontainer {
+      height: fit-content;
+      margin: 5vh 0;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: auto;
+      column-gap: 2vw;
+      row-gap: 2vh;
+      justify-content: center;
+  }
+
+  #welcome-section {
+    background-image: url("Images/mobile.jpg");
+  }
+}
