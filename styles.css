@@ -276,6 +276,8 @@ footer {
     text-align: center;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
+    text-transform: uppercase;
+    text-shadow: none;
 }
 
 html {
