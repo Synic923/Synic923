@@ -7,5 +7,5 @@ Here are some ideas to get you started:
 -->
 
 -  Languages learnt/learning: HTML, CSS, Javascript (freeCodeCamp)
--  Reddit: u/Shinjan128
+-  Reddit: https://www.reddit.com/user/Shinjan128/
 -  My Portfolio: https://synic-dx.github.io/Synic-dx/
