@@ -70,11 +70,6 @@ a:visited {
     transition: 0.5s;
 }
 
-#brackets {
-   color: rgb(0, 174, 255);
-   text-shadow: none;
-}
-
 .hoveranimation:hover {
     color: #fff;
     text-shadow: 0 0 1px #03e9f4,
@@ -118,6 +113,7 @@ section#welcome-section {
     font-family: Kanit, Poppins, Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     right: 0;
+    text-shadow: none;
     font-weight: 300;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
@@ -236,7 +232,7 @@ a.contactitem:hover {
     text-shadow: 3px 3px 1.5px #1f1f1f;
 }
 
-.translateY {
+.translateY, .contacttranslateY {
   transition: transform 0.3s ease-out;
 }
 
@@ -244,11 +240,14 @@ a.contactitem:hover {
   transform: translateY(5px);
 }
 
+.contacttranslateY:hover {
+  transform: translateY(8px);
+}
 img#pfp {
     margin: auto;
     position: relative;
     top: 20vh;
-    --b: 3px;     /* the border thickness*/
+    --b: 3.5px;     /* the border thickness*/
     --g: 10px;    /* the gap */
     --c: #4ECDC4; /* the color */
     
