@@ -11,11 +11,11 @@
 <body>
     <header>
         <nav id="navbar">
-            <p id="navabout" class="navitem hover-underline-animation translateY"><a href="#welcome-section">About</a></p>
+            <p id="navabout" class="navitem hover-underline-animation translateY hideme"><a href="#welcome-section">About</a></p>
             
-            <p id="navwork" class="navitem hover-underline-animation translateY"><a href="#projects">Work</a></p>
+            <p id="navwork" class="navitem hover-underline-animation translateY hideme"><a href="#projects">Work</a></p>
                 
-            <p id="navcontact" class="navitem hover-underline-animation translateY"><a href="#contact">Contact</a></p>
+            <p id="navcontact" class="navitem hover-underline-animation translateY hideme"><a href="#contact">Contact</a></p>
         </nav>
     </header>
 
@@ -29,10 +29,10 @@
         </section>
 
         <section id="projects">
-            <h2 id="projectheader">My Projects</h2>
+            <h2 id="projectheader" class="hideme">My Projects</h2>
 
         <div id="articlecontainer">
-            <article class="project-tile">
+            <article class="project-tile hideme">
             <a href="https://synic-dx.github.io/blackJack/blackJack.html" target="_blank" rel="noopener">
                 <img id="blackjack-game" class="articleimg" src="Images/blackjack.png" alt="Blackjack Game">
                 <p class="articletext">blackJack</p>
@@ -43,15 +43,16 @@
 
         <section id="contact">
             <ul id="contact-list">
-                <li><a id="reddit-link" class="contactitem hover-underline-animation contacttranslateY" href="https://www.reddit.com/user/Shinjan128/" target="_blank" rel="noopener">Reddit</a></li>
-                <li><a id="mail-link" class="contactitem hover-underline-animation contacttranslateY" target="_blank" href="mailto:shinjan1280@gmail.com" rel="noopener">Email</a></li>
-                <li><a id="profile-link" class="contactitem hover-underline-animation contacttranslateY" target="_blank" href="https://github.com/Synic-dx" rel="noopener">Github</a></li>
+                <li><a id="reddit-link" class="contactitem hover-underline-animation contacttranslateY hideme" href="https://www.reddit.com/user/Shinjan128/" target="_blank" rel="noopener">Reddit</a></li>
+                <li><a id="mail-link" class="contactitem hover-underline-animation contacttranslateY hideme" target="_blank" href="mailto:shinjan1280@gmail.com" rel="noopener">Email</a></li>
+                <li><a id="profile-link" class="contactitem hover-underline-animation contacttranslateY hideme" target="_blank" href="https://github.com/Synic-dx" rel="noopener">Github</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <credits> &copy;2024 Synic</credits>
+        <credits class="hideme"> &copy;2024 Synic</credits>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
