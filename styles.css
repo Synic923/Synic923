@@ -12,24 +12,44 @@
 }
 
 * {
-    box-sizing: border-box;
     -webkit-user-select: none;
     user-select: none;
 }
 
 html, body {
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
   }
 
 body {
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
     font-size: 1.5em;
     color: aliceblue;
-    width: 98.5vw;
+    width:  100vw;
     text-shadow: 3px 3px 1.5px #1f1f1f;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+
+html {
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+}
+
+/* For Internet Explorer/Edge */
+
+body ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 header {
@@ -37,7 +57,7 @@ header {
     flex-direction: row;
     position: fixed;
     top: 0;
-    width: 98.5vw;
+    width: 100vw;
     height: 10vh;
     background-color: black;
     margin: 0;
@@ -62,10 +82,6 @@ nav {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     
-}
-
-main {
-    position: absolute;
 }
 
 a {
@@ -101,7 +117,7 @@ section#welcome-section {
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
-      width: 98.5vw;
+      width: 100%;
       margin: 0;
       position: relative;
       display: flex;
@@ -110,7 +126,7 @@ section#welcome-section {
 
 #intro {
     position: absolute;
-    top: 35vh;
+    top: 36vh;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -132,6 +148,11 @@ section#welcome-section {
     right: 0;
     text-shadow: none;
     font-weight: 300;
+    margin-top: 7px;
+}
+
+#code {
+  cursor: pointer;
 }
 
 .textswitch {
@@ -146,10 +167,9 @@ section#welcome-section {
 
 section#projects {
     height: fit-content;
-    width: 98.5vw;
+    width: 100%;
     position: relative;
     margin: 0;
-    padding: 7vh 5vw;
     background-color: black;
     background: url("Images/bg1.jpg");
     background-repeat: no-repeat;
@@ -157,20 +177,20 @@ section#projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #projectheader, #contactheader {
-    margin-top: 7vh;
     text-align: center;
-    margin: 0 auto 3vh auto;
+    margin: 0 auto 5vh auto;
     font-family: Anta, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     text-shadow: none;
     color: aliceblue;
 }
 
-#contactheader {
-  margin-top: 5vh;
+#contact, #projects {
+  padding: 10vh 0;
 }
 
 #articlecontainer {
@@ -189,9 +209,9 @@ article {
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    --g: 3px;     /* the gap */
+    --g: 1px;     /* the gap */
   --b: 5px;    /* border thickness*/
-  --c: #00ffea; /* the color */
+  --c: var(--clr-cyan); /* the color */
   
   
   padding: calc(var(--g) + var(--b));
@@ -223,8 +243,8 @@ article:hover {
 }
 
 .articleimg {
-    width: 100%;
-    height: 80%px;
+    width: 99%;
+    height: 80%;
     border-radius: 10px 10px 0 0;
     margin-bottom: 0;
 }
@@ -244,7 +264,7 @@ ul {
 section#contact {
     height: fit-content;
     padding: 3vh 3vw 0 3w;
-    width: 98.5vw;
+    width: 100%;
     position: relative;
     margin: 0;
     background-color: rgb(0, 0, 0);
@@ -316,7 +336,7 @@ img#pfp {
 
   footer {
     height: fit-content;
-    width: 98.5vw;
+    width: 100vw;
     margin: auto auto 5px auto;
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -474,7 +494,7 @@ img#pfp {
   }
   
   /* Media Query for Mobile Devices */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     nav {
         position: static; 
         width: 100%;
@@ -495,7 +515,6 @@ img#pfp {
       row-gap: 2vh;
       justify-content: center;
   }
-
   #welcome-section {
     background-image: url("Images/mobile.jpg");
   }

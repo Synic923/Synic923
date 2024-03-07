@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const pfp = document.querySelector("#pfp");
+const code = document.querySelector("#code");
 const subIntro = document.querySelector("#subintro");
 
 
@@ -39,3 +40,4 @@ function expandIntro() {
 }
 
 pfp.addEventListener('click', expandIntro);
+code.addEventListener('click', expandIntro);
