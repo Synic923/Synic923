@@ -150,6 +150,7 @@ section#projects {
     position: relative;
     margin: 0;
     padding: 7vh 5vw;
+    background-color: black;
     background: url("Images/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
