@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Kode+Mono:wght@400..700&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --clr-cyan: #00ffff;
+  --clr-mail: #ff0000;
+  --clr-reddit: #ff7300;
+  --clr-github: #00b7ff;
+}
+
 * {
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -67,7 +74,7 @@ a {
 }
 
 .cyantext {
-  color: #03e9f4;;
+  color: var(--clr-cyan);
 }
 
 a:visited {
@@ -81,10 +88,10 @@ a:visited {
 
 .hoveranimation:hover {
     color: #fff;
-    text-shadow: 0 0 1px #03e9f4,
-                0 0 5px #03e9f4,
-                0 0 10px #03e9f4,
-                0 0 20px #03e9f4;
+    text-shadow: 0 0 1px var(--clr-cyan),
+                0 0 5px var(--clr-cyan),
+                0 0 10px var(--clr-cyan),
+                0 0 20px var(--clr-cyan);
   }
 
 section#welcome-section {
@@ -105,6 +112,8 @@ section#welcome-section {
     position: absolute;
     top: 35vh;
     text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 #mainintro {
@@ -248,14 +257,13 @@ section#contact {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20vh 0 25vh -3vw;
-    font-size: 2rem;
+    margin: 17vh 0 25vh -3vw;
+    font-size: 1.5rem;
 }
 
 a.contactitem {
     text-shadow: none;
-    
-    font-family: Anta, Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .translateY, .contacttranslateY {
@@ -271,6 +279,8 @@ a.contactitem {
 }
 img#pfp {
     margin: auto;
+    justify-self: center;
+    align-self: center;
     position: relative;
     top: 20vh;
     --b: 3.5px;     /* the border thickness*/
@@ -315,7 +325,7 @@ img#pfp {
     text-shadow: None;
     position: absolute;
     bottom: 0px;
-    color: #00ffea;
+    color: var(--clr-cyan);
 }
 
 .hover-underline-animation {
@@ -331,32 +341,32 @@ img#pfp {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #00ffff;
+  background-color: var(--clr-cyan);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
 #mail-link {
-  color: #ff0000;
+  color: var(--clr-mail);
 }
 
 #mail-link::after {
-  background-color: #ff0000;
+  background-color: var(--clr-mail);
 }
 
 #reddit-link {
-  color: #ff7300;
+  color: var(--clr-reddit);
 }
 
 #reddit-link::after {
-  background-color: #ff7300;
+  background-color: var(--clr-reddit);
 }
 
 #profile-link {
-  color: #0837d1;
+  color: var(--clr-github);
 }
 #profile-link::after {
-  background-color: #0837d1;
+  background-color: var(--clr-github);
 }
 
 .hover-underline-animation:hover::after {
