@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Synic's Personal Portfolio">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="Images/pfp.png">
-    <title>Synic's Personal Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Synic's Personal Portfolio">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="Images/pfp.png">
+  <title>Synic's Personal Portfolio</title>
 </head>
 <body style="background-color: black;">
-    <header>
-        <nav id="navbar">
-            <p id="navabout" class="navitem hover-underline-animation translateY hideme"><a href="#welcome-section">About</a></p>
-            
-            <p id="navwork" class="navitem hover-underline-animation translateY hideme"><a href="#projects">Work</a></p>
-                
-            <p id="navcontact" class="navitem hover-underline-animation translateY hideme"><a href="#contact">Contact</a></p>
-        </nav>
-    </header>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li id="navabout" class="navitem hover-underline-animation translateY hideme">
+          <a href="#welcome-section">About</a>
+        </li>
+        <li id="navwork" class="navitem hover-underline-animation translateY hideme">
+          <a href="#projects">Work</a>
+        </li>
+        <li id="navcontact" class="navitem hover-underline-animation translateY hideme">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome-section">
+        <div>
+        <img id="pfp" width="120px" height="120px" src="Images/pfp.png" alt="Profile Picture" draggable="false">
+        <h1 id="intro">
+        </div>
+        <h1 id="intro">
+            <span id="mainintro">Hi, I am <span class="hoveranimation">&commat;Synic</span></span><br>
+            <span id="subintro" class="textswitch">I do <span id="code" class="hoveranimation">&lt;code&gt;</span></span>
+        </h1>
+    </section>
 
-    <main>
-        <section id="welcome-section">
-            <div><img id="pfp" width="120px" height="120px" src="Images/pfp.png" alt="PFP" draggable="false"></div>
-            <h1 id="intro">
-                <span id="mainintro">Hi, I am <span class="hoveranimation">&commat;Synic</span></span><br>
-                <span id="subintro" class="textswitch">I do <span id="code" class="hoveranimation">&lt;code&gt;</span></span>
-            </h1>
-        </section>
-
-        <section id="projects">
-            <h2 id="projectheader" class="hideme hover-underline-animation">My Projects</h2>
+    <section id="projects">
+        <h2 id="projectheader" class="hideme hover-underline-animation">My Projects</h2>
 
         <div id="articlecontainer">
-            <article class="project-tile hideme">
+          <article class="project-tile hideme">
             <a href="https://synic-dx.github.io/blackJack/blackJack.html" target="_blank" rel="noopener">
-                <img id="blackjack-game" class="articleimg" src="Images/blackjack.png" alt="Blackjack Screenshot" draggable="false">
-                <p class="articletext">blackJack</p>
+              <img id="blackjack-game" class="articleimg" src="Images/blackjack.png" alt="Blackjack Game Screenshot" draggable="false">
+              <p class="articletext">blackJack</p>
             </a>
-            </article>
-        </div>
-        </section>
+          </article>
+       </div>
+  
+    </section>
 
-        <section id="contact">
-            <h2 id="contactheader" class=" hideme hover-underline-animation">Find Me On:</h2>
-            <ul id="contact-list">
-                <li><a id="reddit-link" class="contactitem hover-underline-animation contacttranslateY hideme" href="https://www.reddit.com/user/Shinjan128/" target="_blank" rel="noopener">Reddit</a></li>
-                <li><a id="mail-link" class="contactitem hover-underline-animation contacttranslateY hideme" target="_blank" href="mailto:shinjan1280@gmail.com" rel="noopener">Email</a></li>
-                <li><a id="profile-link" class="contactitem hover-underline-animation contacttranslateY hideme" target="_blank" href="https://github.com/Synic-dx" rel="noopener">Github</a></li>
-            </ul>
-        <footer>
-            <credits class="hideme"> &copy;2024 Synic</credits>
-        </footer>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+    <section id="contact">
+        <h2 id="contactheader" class="hideme hover-underline-animation">Find Me On:</h2>
+        <ul id="contact-list">
+          <li><a id="reddit-link" class="contactitem hover-underline-animation contacttranslateY hideme" href="https://www.reddit.com/user/Shinjan128/" target="_blank" rel="noopener">Reddit</a></li>
+          <li><a id="mail-link" class="contactitem hover-underline-animation contacttranslateY hideme" target="_blank" href="mailto:shinjan1280@gmail.com" rel="noopener">Email</a></li>
+          <li><a id="profile-link" class="contactitem hover-underline-animation contacttranslateY hideme" target="_blank" href="https://github.com/Synic-dx" rel="noopener">Github</a></li>
+        </ul>
+      <footer>
+          <p class="hideme"> &copy;2024 Synic</p>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

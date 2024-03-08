@@ -58,7 +58,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     background-color: black;
     margin: 0;
     padding: 3px 0;
@@ -73,7 +73,11 @@ nav {
     display: flex;
     flex-direction: row;
     position: absolute;
+    height: 100%;
     right: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .navitem {
@@ -259,7 +263,6 @@ article:hover {
 
 ul {
     list-style-type: none;
-    padding: 0;
 }
 
 section#contact {
@@ -281,6 +284,7 @@ section#contact {
     margin: 20vh 0 20vh 0;
     font-size: 1.5rem;
     box-sizing: border-box;
+    padding: 0;
 }
 
 a.contactitem {
