@@ -205,7 +205,7 @@ section#projects {
     grid-template-columns: auto auto auto;
     column-gap: auto;
     row-gap: auto;
-    justify-content: center;
+    justify-content: space-around;
 }
 article {
     width: 350px;
@@ -231,6 +231,7 @@ article {
   transition: .3s;
   background-color: rgb(0, 0, 0);
   text-shadow: none;
+  margin: 0 7vw 0 7vw;
 }
 
 .hideme {
