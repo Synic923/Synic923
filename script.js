@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const pfp = document.querySelector("#pfp");
+const synic = document.querySelector("#synic");
 const code = document.querySelector("#code");
 const subIntro = document.querySelector("#subintro");
 
@@ -30,7 +31,7 @@ function expandIntro() {
     // reset class to remove old animation
     subIntro.className = "";
 
-    subIntro.innerHTML = 'I am learning Front-End Web Development at <a href="https://www.freecodecamp.org/Synic-dx" class="hoveranimation cyantext" target="_blank">freeCodeCamp.org</a>';
+    subIntro.innerHTML = 'Learning Front-End Web Development. View my certifications at <a href="https://www.freecodecamp.org/Synic-dx" class="hoveranimation cyantext" target="_blank">freeCodeCamp.org</a>';
     subIntro.style.marginTop = "20px";
     subIntro.style.fontSize = "large";
 
@@ -40,4 +41,5 @@ function expandIntro() {
 }
 
 pfp.addEventListener('click', expandIntro);
+synic.addEventListener('click', expandIntro);
 code.addEventListener('click', expandIntro);
