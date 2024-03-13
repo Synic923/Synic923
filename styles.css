@@ -21,8 +21,7 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   }
 
 body {
@@ -193,7 +192,7 @@ section#projects {
     color: aliceblue;
 }
 
-#contact, #projects {
+#projects, #contact {
   padding: 10vh 0;
 }
 
@@ -288,9 +287,9 @@ section#contact {
     padding: 0;
 }
 
-a.contactitem {
+.contactitem {
     text-shadow: none;
-    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
 }
 
 .translateY, .contacttranslateY {
@@ -302,8 +301,9 @@ a.contactitem {
 }
 
 .contacttranslateY:hover {
-  transform: translateY(12px);
+  transform: translateY(15px);
 }
+
 img#pfp {
     margin: auto;
     justify-self: center;
