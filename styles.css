@@ -377,23 +377,12 @@ img#pfp {
   color: var(--clr-mail);
 }
 
-#mail-link::after {
-  background-color: var(--clr-mail);
-}
-
 #reddit-link {
   color: var(--clr-reddit);
 }
 
-#reddit-link::after {
-  background-color: var(--clr-reddit);
-}
-
 #profile-link {
   color: var(--clr-github);
-}
-#profile-link::after {
-  background-color: var(--clr-github);
 }
 
 .hover-underline-animation:hover::after {
