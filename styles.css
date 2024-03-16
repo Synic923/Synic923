@@ -297,7 +297,7 @@ section#contact {
 }
 
 .translateY:hover {
-  transform: translateY(5px);
+  transform: translateY(3px);
 }
 
 .contacttranslateY:hover {
@@ -343,7 +343,7 @@ img#pfp {
   footer {
     height: fit-content;
     width: 100vw;
-    margin: auto auto 5px auto;
+    margin: auto auto 0 auto;
     background-color: rgb(0, 0, 0);
     text-align: center;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
@@ -490,14 +490,15 @@ img#pfp {
   
   /* Media Query for Mobile Devices */
 @media (max-width: 800px) {
-    nav {
+    nav, #navlist {
         position: static; 
         width: 100%;
         justify-content: center;
+        align-items: center;
     }
 
     #navabout, #navwork, #navcontact {
-        margin: 2vh 5vw;
+        margin: 2vh 3vw;
     }
 
     #articlecontainer {
@@ -510,7 +511,12 @@ img#pfp {
       row-gap: 2vh;
       justify-content: center;
   }
-  #welcome-section {
+  section#welcome-section {
+    background-color: black;
+    -webkit-background-image: url("Images/mobile.jpg");
     background-image: url("Images/mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
 }
