@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Synic-dx/static/css/main.e469f359.css",
+    "main.js": "/Synic-dx/static/js/main.5cdb9c40.js",
+    "static/js/111.cde576ae.chunk.js": "/Synic-dx/static/js/111.cde576ae.chunk.js",
+    "static/media/ePiano.png": "/Synic-dx/static/media/ePiano.5a4beb9c97612f5b08e8.png",
+    "static/media/blackjack.png": "/Synic-dx/static/media/blackjack.de22dd5fa5c0465d5e22.png",
+    "index.html": "/Synic-dx/index.html",
+    "main.e469f359.css.map": "/Synic-dx/static/css/main.e469f359.css.map",
+    "main.5cdb9c40.js.map": "/Synic-dx/static/js/main.5cdb9c40.js.map",
+    "111.cde576ae.chunk.js.map": "/Synic-dx/static/js/111.cde576ae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e469f359.css",
+    "static/js/main.5cdb9c40.js"
+  ]
+}
