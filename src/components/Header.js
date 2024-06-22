@@ -1,16 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faReddit,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faReddit } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from "@chakra-ui/react";
 
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: shinjan1280@gmail.com",
+    url: "mailto:shinjan1280@gmail.com",
   },
   {
     icon: faGithub,
@@ -40,25 +37,32 @@ const Header = () => {
       top={0}
       left={0}
       right={0}
-      translateY={0}
-      transitionProperty="transform"
-      transitionDuration=".3s"
-      transitionTimingFunction="ease-in-out"
       backgroundColor="black"
+      color="white"
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
-        <HStack
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center"
-        >
+      <Box maxWidth="1280px" margin="0 auto">
+        <HStack px={16} py={4} justifyContent="space-between" alignItems="center">
           <nav>
-            {/* Add social media links based on the `socials` data */}
+            {socials.map((social) => (
+              <a
+                key={social.icon}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginLeft: "30px" }}
+              >
+                <FontAwesomeIcon icon={social.icon} size="lg" />
+              </a>
+            ))}
           </nav>
           <nav>
             <HStack spacing={8}>
-              {/* Add links to Projects and Contact me section */}
+              <a onClick={handleClick("projects")} href="#projects-section">
+                Projects
+              </a>
+              <a onClick={handleClick("contact")} href="#contact-section">
+                Contact Me
+              </a>
             </HStack>
           </nav>
         </HStack>
@@ -66,4 +70,7 @@ const Header = () => {
     </Box>
   );
 };
+
 export default Header;
+
+

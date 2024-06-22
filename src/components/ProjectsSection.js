@@ -21,11 +21,15 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <FullScreenSection
-      backgroundColor="#14532d"
+      backgroundColor="black"
+      backgroundImage="https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/bg1.jpg"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
       isDarkBackground
       p={8}
       alignItems="flex-start"
       spacing={8}
+      fontFamily="Anta"
     >
       <Heading as="h1" id="projects-section">
         Featured Projects
