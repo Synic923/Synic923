@@ -15,7 +15,7 @@ const LandingSection = () => (
     backgroundSize="cover"
     backgroundRepeat="no-repeat"
   >
-    <Avatar name="Synic" size="xl" src="https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/pfp.png" />
+    <Avatar id="avatar" name="Synic" size="xl" src="https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/pfp.png" />
     <Heading as="h1" size="lg">
       {greeting}
     </Heading>

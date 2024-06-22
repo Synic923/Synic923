@@ -43,6 +43,7 @@ const Header = () => {
       right={0}
       backgroundColor="black"
       color="white"
+      zIndex="10"
     >
       <Box maxWidth="1280px" margin="0 auto">
         <HStack px={16} py={4} justifyContent="space-between" alignItems="center">
@@ -55,7 +56,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 style={{ marginLeft: "30px" }}
               >
-                <FontAwesomeIcon icon={social.icon} size="lg" />
+                <FontAwesomeIcon icon={social.icon} size="xl" />
               </a>
             ))}
           </nav>
@@ -64,7 +65,7 @@ const Header = () => {
               <a onClick={handleClick("projects")} href="#projects-section">
                 Projects
               </a>
-              <a onClick={handleClick("contact")} href="#contact-section">
+              <a onClick={handleClick("contact")} href="#contactme-section">
                 Contact Me
               </a>
             </HStack>

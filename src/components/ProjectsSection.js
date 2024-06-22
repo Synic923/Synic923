@@ -9,12 +9,15 @@ const projects = [
     description:
       "3-Octave Online Piano Player- Made with Vanilla JS",
     getImageSrc: () => require("../images/ePiano.png"),
+    link: "https://synic-dx.github.io/ePiano/"
+    
   },
   {
     title: "blackJack",
     description:
       "blackJack Online- Made with Vanilla JS",
     getImageSrc: () => require("../images/blackjack.png"),
+    link: "https://synic-dx.github.io/blackJack/blackJack.html"
   },
 ];
 
@@ -45,6 +48,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            link={project.link}
           />
         ))}
       </Box>

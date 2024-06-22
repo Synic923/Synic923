@@ -22,9 +22,29 @@ const LandingSection = () => {
   const { onOpen } = useAlertContext();
 
   const formik = useFormik({
-    initialValues: {},
-    onSubmit: (values) => {},
-    validationSchema: Yup.object({}),
+    initialValues: {
+      firstName: '',
+      email: '',
+      type: '',
+      comment: '',
+    },
+    onSubmit: async (values) => {
+      try {
+        // Perform an API call using the submit helper from useSubmit
+        const apiResponse = await submit();
+        // Handle the response as needed
+        console.log(apiResponse);
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
+    },
+    validationSchema: Yup.object({
+      firstName: Yup.string().required("Required"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Required"),
+      comment: Yup.string().required("Required").min(25, "Must be at least 25 characters"),
+    }),
   });
 
   return (
@@ -63,11 +83,11 @@ const LandingSection = () => {
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
                 <Select id="type" name="type">
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
-                    Open source consultancy session
+                  <option value="hiHello">Hi Hello</option>
+                  <option value="fuckingAround">
+                    I'm Fucking Around
                   </option>
-                  <option value="other">Other</option>
+                  <option value="girl">I'm a hot girl</option>
                 </Select>
               </FormControl>
               <FormControl isInvalid={false}>
