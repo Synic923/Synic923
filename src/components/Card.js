@@ -9,9 +9,11 @@ const Card = ({ title, description, imageSrc }) => {
       spacing={4}
       borderWidth="1px"
       borderRadius="lg"
+      borderColor="cyan"
       p={4}
       boxShadow="md"
       alignItems="flex-start"
+      backgroundColor="black"
     >
       <Image src={imageSrc} alt={title} backgroundColor={'black'} objectFit="cover" />
 
