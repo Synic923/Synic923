@@ -55,6 +55,7 @@ const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: "30px" }}
+                className='hoverAnimation'
               >
                 <FontAwesomeIcon icon={social.icon} size="xl" />
               </a>
@@ -62,10 +63,10 @@ const Header = () => {
           </nav>
           <nav>
             <HStack spacing={8}>
-              <a onClick={handleClick("projects")} href="#projects-section">
+              <a onClick={handleClick("projects")} href="#projects-section" className='hoverAnimation'>
                 Projects
               </a>
-              <a onClick={handleClick("contact")} href="#contactme-section">
+              <a onClick={handleClick("contact")} href="#contactme-section" className='hoverAnimation'>
                 Contact Me
               </a>
             </HStack>

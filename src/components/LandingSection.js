@@ -2,8 +2,17 @@ import React, { useEffect, useState } from "react";
 import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 
-const greeting = "Hi, I am @Synic";
-const bio1 = "A frontend developer";
+const Greeting = () => {
+  return (
+    <span>Hi, I am <span className='hoverBorderAnimation'>@Synic</span></span>
+  );
+}
+
+const Bio1 = () => {
+  return (
+    <span>I do <span className='hoverBorderAnimation'>{'<code>'}</span></span>
+  );
+}
 
 const LandingSection = () => {
   const [showContent, setShowContent] = useState(false);
@@ -33,10 +42,10 @@ const LandingSection = () => {
         style={{ opacity: showContent ? 1 : 0, transition: "opacity 1s" }}
       />
       <Heading as="h1" size="lg" style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }} fontFamily="anta" fontWeight= "600"> 
-        {greeting}
+        <Greeting />
       </Heading>
       <Heading as="h2" size="md" style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }} fontFamily="anta" fontWeight= "200">
-        {bio1}
+        <Bio1/>
       </Heading>
     </FullScreenSection>
   );

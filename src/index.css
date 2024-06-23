@@ -48,3 +48,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hoverAnimation:hover {
+  color: cyan;
+}
+
+.hoverBorderAnimation:hover {
+  text-shadow: 0 0 1px cyan,
+                0 0 5px cyan,
+                0 0 10px cyan,
+                0 0 20px cyan;
+}
+
+#avatar {
+  --b: 3.5px;     /* the border thickness*/
+    --g: 8px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+#avatar:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
