@@ -30,7 +30,7 @@ const LandingSection = () => {
         name="Synic"
         size="xl"
         src="https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/pfp.png"
-        style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }}
+        style={{ opacity: showContent ? 1 : 0, transition: "opacity 1s" }}
       />
       <Heading as="h1" size="lg" style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }} fontFamily="anta" fontWeight= "600"> 
         {greeting}
