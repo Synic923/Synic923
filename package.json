@@ -31,7 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -49,6 +49,5 @@
     "gh-pages": "^6.1.1",
     "prettier": "^2.7.1"
   },
-
-"homepage": "https://synic-dx.github.io/Synic-dx/"
+  "homepage": "https://synic-dx.github.io/Synic-dx/"
 }

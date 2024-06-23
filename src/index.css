@@ -13,6 +13,11 @@ body {
   -webkit-user-select: none;
 }
 
+@font-face {
+  font-family: 'anta';
+  src: url('../src/fonts/Anta-Regular.ttf') format('truetype');
+}
+
 @supports (scrollbar-width: thin) {
   html {
     scrollbar-width: none;

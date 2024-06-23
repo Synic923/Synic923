@@ -34,7 +34,7 @@ const ProjectsSection = () => {
       spacing={8}
       fontFamily="Anta"
     >
-      <Heading as="h1" id="projects-section">
+      <Heading as="h1" id="projects-section" fontFamily="anta">
         Featured Projects
       </Heading>
       <Box

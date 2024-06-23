@@ -29,11 +29,11 @@ const ContactMeSection = () => {
     initialValues: { 
       firstName: "", 
       email: "", 
-      type: "hireMe", 
+      type: "hiHello", 
       comment: "", 
     }, 
     onSubmit: (values) => { 
-      submit('https://john.com/contactme', values); 
+      submit('https://synic-dx.github.io/Synic-dx/contactme', values); 
     }, 
     validationSchema: Yup.object({ 
       firstName: Yup.string().required("Required"), 
@@ -61,7 +61,7 @@ const ContactMeSection = () => {
       spacing={8} 
     > 
       <VStack w="1024px" p={32} alignItems="flex-start"> 
-        <Heading as="h1" id="contactme-section"> 
+        <Heading as="h1" id="contactme-section" fontFamily="anta"> 
           Contact me 
         </Heading> 
         <Box p={6} rounded="md" w="100%"> 
@@ -89,7 +89,7 @@ const ContactMeSection = () => {
              <FormControl> 
                <FormLabel htmlFor="type">Type of enquiry</FormLabel> 
                <Select id="type" name="type" {...formik.getFieldProps("type")}> 
-                 <option value="hihello">Hi Hello</option> 
+                 <option value="hiHello">Hi Hello</option>
                  <option value="fuckingAround"> 
                    I'm fucking around 
                  </option> 
