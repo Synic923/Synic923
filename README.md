@@ -1,10 +1,7 @@
 # Hi, I'm Synic
 
-<!--
-**Synic923/Synic923** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A Frontend Web Development student.
 
-Here are some ideas to get you started:
--->
-- I talk HTML, CSS, JavaScript (and React)
+## Languages, libraries, and frameworks learnt and learning
 
-- My Portfolio: https://synic-dx.github.io/Synic-dx/
+![Static Badge](https://img.shields.io/badge/HTML-CSS-blue?style=flat&labelColor=red&link=https%3A%2F%2Fcoursera.org%2Fshare%2F3dbf75c851f2deebb64bab8879175467) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?style=flat&link=https%3A%2F%2Fcoursera.org%2Fshare%2F1cf84da6773193a5641e6644a9c46c5b) ![Static Badge](https://img.shields.io/badge/React-blue?style=flat&link=https%3A%2F%2Fcoursera.org%2Fshare%2F5548f2e9c9dfdc9ac94ab97afcd38b7e)
