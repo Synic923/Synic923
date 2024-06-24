@@ -33,8 +33,10 @@ const ProjectsSection = () => {
       alignItems="flex-start"
       spacing={8}
       fontFamily="Anta"
+      id="projects-section"
+      paddingTop="60px"
     >
-      <Heading as="h1" id="projects-section" fontFamily="anta">
+      <Heading as="h1" fontFamily="anta">
         Featured Projects
       </Heading>
       <Box

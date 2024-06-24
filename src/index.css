@@ -61,7 +61,7 @@ code {
 }
 
 #avatar {
-  --b: 3.5px;     /* the border thickness*/
+  --b: 2.5px;     /* the border thickness*/
     --g: 8px;    /* the gap */
     --c: #4ECDC4; /* the color */
 

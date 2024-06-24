@@ -33,7 +33,7 @@ const ContactMeSection = () => {
       comment: "", 
     }, 
     onSubmit: (values) => { 
-      submit('https://synic-dx.github.io/Synic-dx/contactme', values); 
+      submit('shinjan1280@gmail.com', values); 
     }, 
     validationSchema: Yup.object({ 
       firstName: Yup.string().required("Required"), 
@@ -59,9 +59,10 @@ const ContactMeSection = () => {
       backgroundColor="#090A0A" 
       py={16} 
       spacing={8} 
+      id="contactme-section"
     > 
       <VStack w="1024px" p={32} alignItems="flex-start"> 
-        <Heading as="h1" id="contactme-section" fontFamily="anta"> 
+        <Heading as="h1" fontFamily="anta"> 
           Contact me 
         </Heading> 
         <Box p={6} rounded="md" w="100%"> 
