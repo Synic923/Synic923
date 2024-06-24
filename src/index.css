@@ -7,10 +7,10 @@ body {
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   background-color: black !important;
   user-select: none;
   -webkit-user-select: none;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -30,7 +30,7 @@ body {
 }
 
 html {
-  background-color: #18181b;
+  background-color: #000000;
 }
 
 @supports (scroll-behavior: smooth) {

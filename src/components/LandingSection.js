@@ -30,7 +30,7 @@ const LandingSection = () => {
       alignItems="center"
       isDarkBackground
       backgroundColor="black"
-      backgroundImage="url('https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/neonblack.jpg')"
+      backgroundImage="url('https://raw.githubusercontent.com/Synic-dx/Synic-dx/react/src/images/neonblack.jpg')"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
@@ -38,7 +38,7 @@ const LandingSection = () => {
         id="avatar"
         name="Synic"
         size="xl"
-        src="https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/pfp.png"
+        src="https://raw.githubusercontent.com/Synic-dx/Synic-dx/react/public/pfp.png"
         style={{ opacity: showContent ? 1 : 0, transition: "opacity 1s" }}
       />
       <Heading as="h1" size="lg" style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }} fontFamily="anta" fontWeight= "600"> 

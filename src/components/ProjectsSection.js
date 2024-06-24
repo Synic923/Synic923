@@ -25,7 +25,7 @@ const ProjectsSection = () => {
   return (
     <FullScreenSection
       backgroundColor="black"
-      backgroundImage="https://raw.githubusercontent.com/Synic-dx/Synic-dx/master/Images/bg1.jpg"
+      backgroundImage="https://raw.githubusercontent.com/Synic-dx/Synic-dx/react/src/images/bg1.jpg"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       isDarkBackground
