@@ -67,7 +67,7 @@ const Header = () => {
                 Projects
               </a>
               <a onClick={handleClick("contact")} href="#contactme-section" className='hoverAnimation'>
-                Contact Me
+                Contact
               </a>
             </HStack>
           </nav>
