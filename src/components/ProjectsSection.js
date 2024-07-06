@@ -7,7 +7,7 @@ const projects = [
   {
     title: "ePiano",
     description:
-      "3-Octave Online Piano Player- Made with Vanilla JS",
+      "3-Octave Online Piano Player Optimized For Keyboard Layouts- Made with Vanilla JS",
     getImageSrc: () => require("../images/ePiano.png"),
     link: "https://synic-dx.github.io/ePiano/"
 
@@ -15,10 +15,17 @@ const projects = [
   {
     title: "blackJack",
     description:
-      "blackJack Online- Made with Vanilla JS",
+      "Fully Functional Blackjack Card Game Engine- Made with Vanilla JS",
     getImageSrc: () => require("../images/blackjack.png"),
     link: "https://synic-dx.github.io/blackJack/blackJack.html"
   },
+  {
+    title: "Little Lemon",
+    description:
+      "Landing Page & Fully Functional Table Booking System For Fictional Restaurant- Made with React",
+    getImageSrc: () => require("../images/littleLemon.png"),
+    link: "https://synic-dx.github.io/Little-Lemon/"
+  }
 ];
 
 const ProjectsSection = () => {
@@ -41,7 +48,7 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns="repeat(3,minmax(0,1fr))"
         gridGap={8}
       >
         {projects.map((project) => (

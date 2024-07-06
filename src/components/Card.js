@@ -1,40 +1,50 @@
 import React from "react";
-import { Heading, HStack, Image, Text, VStack, Link } from "@chakra-ui/react";
+import {
+  Heading,
+  HStack,
+  Image,
+  Text,
+  LinkBox,
+  LinkOverlay,
+  Flex
+} from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ title, description, imageSrc, link }) => {
   return (
-    <VStack
-      spacing={4}
+    <LinkBox
+      display={"flex"}
+      flexDirection={"column"}
       borderWidth="1px"
       borderRadius="lg"
       borderColor="cyan"
-      p={4}
       boxShadow="md"
       alignItems="flex-start"
       backgroundColor="black"
+      gap={5} p={4}
     >
+      <Image
+        src={imageSrc}
+        alt={title}
+        backgroundColor="black"
+        objectFit="cover"
+        borderTopRadius={8}
+      />
 
-      <Image src={imageSrc} alt={title} backgroundColor="black" objectFit="cover" />
+        <Heading fontSize={'24px'} fontFamily={'Anta'} fontWeight={500}>{title}</Heading>
 
-      <Heading size="md">{title}</Heading>
+        <Text>{description}</Text>
 
-      <Text>{description}</Text>
+        <HStack>
+          <FontAwesomeIcon icon={faArrowRight} />
 
-      <HStack>
-
-        <FontAwesomeIcon icon={faArrowRight} />
-
-        <Link href={link} isExternal>
-         Learn More
-        </Link>
-
-      </HStack>
-
-    </VStack>
+          <LinkOverlay href={link} isExternal>
+            Learn More
+          </LinkOverlay>
+        </HStack>
+    </LinkBox>
   );
 };
 
 export default Card;
-
