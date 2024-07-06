@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Synic-dx/static/css/main.aa36851e.css",
-    "main.js": "/Synic-dx/static/js/main.54b6a51a.js",
+    "main.css": "/Synic-dx/static/css/main.aeb4d985.css",
+    "main.js": "/Synic-dx/static/js/main.886ea5aa.js",
     "static/js/453.9415623e.chunk.js": "/Synic-dx/static/js/453.9415623e.chunk.js",
+    "static/media/littleLemon.png": "/Synic-dx/static/media/littleLemon.8607444c18a469ba39c8.png",
     "static/media/ePiano.png": "/Synic-dx/static/media/ePiano.5a4beb9c97612f5b08e8.png",
     "static/media/Anta-Regular.ttf": "/Synic-dx/static/media/Anta-Regular.0e0da7a3dc95e085b230.ttf",
     "static/media/blackjack.png": "/Synic-dx/static/media/blackjack.de22dd5fa5c0465d5e22.png",
     "index.html": "/Synic-dx/index.html",
-    "main.aa36851e.css.map": "/Synic-dx/static/css/main.aa36851e.css.map",
-    "main.54b6a51a.js.map": "/Synic-dx/static/js/main.54b6a51a.js.map",
+    "main.aeb4d985.css.map": "/Synic-dx/static/css/main.aeb4d985.css.map",
+    "main.886ea5aa.js.map": "/Synic-dx/static/js/main.886ea5aa.js.map",
     "453.9415623e.chunk.js.map": "/Synic-dx/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa36851e.css",
-    "static/js/main.54b6a51a.js"
+    "static/css/main.aeb4d985.css",
+    "static/js/main.886ea5aa.js"
   ]
 }
