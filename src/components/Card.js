@@ -23,9 +23,9 @@ const Card = ({ title, description, imageSrc, link }) => {
       <Text>{description}</Text>
 
       <HStack>
-      
+
         <FontAwesomeIcon icon={faArrowRight} />
-      
+
         <Link href={link} isExternal>
          Learn More
         </Link>

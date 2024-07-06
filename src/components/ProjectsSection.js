@@ -10,7 +10,7 @@ const projects = [
       "3-Octave Online Piano Player- Made with Vanilla JS",
     getImageSrc: () => require("../images/ePiano.png"),
     link: "https://synic-dx.github.io/ePiano/"
-    
+
   },
   {
     title: "blackJack",
