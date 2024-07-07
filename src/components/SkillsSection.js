@@ -62,52 +62,54 @@ const SkillsSection = () => {
       id="skills-section"
       minHeight={"80vh"}
     >
-      <VStack gap={10}>
-        <Heading as="h1" fontFamily={"Anta"} fontWeight={400}>
-          Skills Attained
-        </Heading>
-        <HStack>
-          <CircularProgress
-            value={100}
-            color="orange.400"
-            thickness="4px"
-            size="100px"
-          >
-            <CircularProgressLabel>HTML</CircularProgressLabel>
-          </CircularProgress>
-          <CircularProgress
-            value={85}
-            color="blue.400"
-            thickness="4px"
-            size="100px"
-          >
-            <CircularProgressLabel>CSS</CircularProgressLabel>
-          </CircularProgress>
-          <CircularProgress
-            value={75}
-            color="yellow.400"
-            thickness="4px"
-            size="100px"
-          >
-            <CircularProgressLabel>JS</CircularProgressLabel>
-          </CircularProgress>
-          <CircularProgress
-            value={60}
-            color="cyan.400"
-            thickness="4px"
-            size="100px"
-          >
-            <CircularProgressLabel>React</CircularProgressLabel>
-          </CircularProgress>
-          <CircularProgress
-            value={75}
-            color="pink.400"
-            thickness="4px"
-            size="100px"
-          >
-            <CircularProgressLabel>Figma</CircularProgressLabel>
-          </CircularProgress>
-        </HStack>
+      <VStack gap={'50px'}>
+        <VStack gap={10}>
+          <Heading as="h1" fontFamily={"Anta"} fontWeight={400}>
+            Skills Attained
+          </Heading>
+          <HStack>
+            <CircularProgress
+              value={100}
+              color="orange.400"
+              thickness="4px"
+              size="100px"
+            >
+              <CircularProgressLabel>HTML</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={85}
+              color="blue.400"
+              thickness="4px"
+              size="100px"
+            >
+              <CircularProgressLabel>CSS</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={75}
+              color="yellow.400"
+              thickness="4px"
+              size="100px"
+            >
+              <CircularProgressLabel>JS</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={60}
+              color="cyan.400"
+              thickness="4px"
+              size="100px"
+            >
+              <CircularProgressLabel>React</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={75}
+              color="pink.400"
+              thickness="4px"
+              size="100px"
+            >
+              <CircularProgressLabel>Figma</CircularProgressLabel>
+            </CircularProgress>
+          </HStack>
+        </VStack>
 
         <Accordion allowToggle w={"85vw"}>
           <AccordionItem>
