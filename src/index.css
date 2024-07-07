@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
   margin: 0;
-  font-family: Anta, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black !important;
@@ -12,11 +10,14 @@ body {
   -webkit-user-select: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: Anta, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
 }
 
 @font-face {
-  font-family: 'anta';
-  src: url('../src/fonts/Anta-Regular.ttf') format('truetype');
+  font-family: "anta";
+  src: url("../src/fonts/Anta-Regular.ttf") format("truetype");
 }
 
 @supports (scrollbar-width: thin) {
@@ -46,7 +47,7 @@ html {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -55,19 +56,16 @@ code {
 }
 
 .hoverBorderAnimation:hover {
-  text-shadow: 0 0 1px cyan,
-                0 0 5px cyan,
-                0 0 10px cyan,
-                0 0 20px cyan;
+  text-shadow: 0 0 1px cyan, 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
 }
 
 #avatar {
-  --b: 2.5px;     /* the border thickness*/
-    --g: 8px;    /* the gap */
-    --c: #4ECDC4; /* the color */
+  --b: 2.5px; /* the border thickness*/
+  --g: 8px; /* the gap */
+  --c: #4ecdc4; /* the color */
 
-    aspect-ratio: 1;
-    border-radius: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
 }
 
 #avatar:hover {

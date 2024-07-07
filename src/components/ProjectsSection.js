@@ -9,23 +9,22 @@ const projects = [
     description:
       "3-Octave Online Piano Player Optimized For Keyboard Layouts- Made with Vanilla JS",
     getImageSrc: () => require("../images/ePiano.png"),
-    link: "https://synic-dx.github.io/ePiano/"
-
+    link: "https://synic-dx.github.io/ePiano/",
   },
   {
     title: "blackJack",
     description:
       "Fully Functional Blackjack Card Game Engine- Made with Vanilla JS",
     getImageSrc: () => require("../images/blackjack.png"),
-    link: "https://synic-dx.github.io/blackJack/blackJack.html"
+    link: "https://synic-dx.github.io/blackJack/blackJack.html",
   },
   {
     title: "Little Lemon",
     description:
       "Landing Page & Fully Functional Table Booking System For Fictional Restaurant- Made with React",
     getImageSrc: () => require("../images/littleLemon.png"),
-    link: "https://synic-dx.github.io/Little-Lemon/"
-  }
+    link: "https://synic-dx.github.io/Little-Lemon/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -41,9 +40,10 @@ const ProjectsSection = () => {
       spacing={8}
       fontFamily="Anta"
       id="projects-section"
-      paddingTop="60px"
+      paddingTop="80px"
+      minHeight={"100vh"}
     >
-      <Heading as="h1" fontFamily="anta">
+      <Heading as="h1" fontFamily="anta" fontWeight={400}>
         Featured Projects
       </Heading>
       <Box

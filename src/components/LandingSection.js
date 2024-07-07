@@ -4,15 +4,19 @@ import FullScreenSection from "./FullScreenSection";
 
 const Greeting = () => {
   return (
-    <span>Hi, I am <span className='hoverBorderAnimation'>@Synic</span></span>
+    <span>
+      Hi, I am <span className="hoverBorderAnimation">@Synic</span>
+    </span>
   );
-}
+};
 
 const Bio1 = () => {
   return (
-    <span>I do <span className='hoverBorderAnimation'>{'<code>'}</span></span>
+    <span>
+      I do <span className="hoverBorderAnimation">{"<code>"}</span>
+    </span>
   );
-}
+};
 
 const LandingSection = () => {
   const [showContent, setShowContent] = useState(false);
@@ -33,6 +37,7 @@ const LandingSection = () => {
       backgroundImage="url('https://raw.githubusercontent.com/Synic-dx/Synic-dx/react/src/images/neonblack.jpg')"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
+      minHeight={"100vh"}
     >
       <Avatar
         id="avatar"
@@ -41,16 +46,26 @@ const LandingSection = () => {
         src="https://raw.githubusercontent.com/Synic-dx/Synic-dx/react/public/pfp.png"
         style={{ opacity: showContent ? 1 : 0, transition: "opacity 1s" }}
       />
-      <Heading as="h1" size="lg" style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }} fontFamily="anta" fontWeight= "600"> 
+      <Heading
+        as="h1"
+        size="lg"
+        style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }}
+        fontFamily="anta"
+        fontWeight="600"
+      >
         <Greeting />
       </Heading>
-      <Heading as="h2" size="md" style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }} fontFamily="anta" fontWeight= "200">
-        <Bio1/>
+      <Heading
+        as="h2"
+        size="md"
+        style={{ opacity: showContent ? 1 : 0, transition: "opacity 0.5s" }}
+        fontFamily="anta"
+        fontWeight="200"
+      >
+        <Bio1 />
       </Heading>
     </FullScreenSection>
   );
 };
 
 export default LandingSection;
-
-

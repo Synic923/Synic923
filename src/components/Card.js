@@ -6,7 +6,6 @@ import {
   Text,
   LinkBox,
   LinkOverlay,
-  Flex
 } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -22,7 +21,8 @@ const Card = ({ title, description, imageSrc, link }) => {
       boxShadow="md"
       alignItems="flex-start"
       backgroundColor="black"
-      gap={5} p={4}
+      gap={5}
+      p={4}
     >
       <Image
         src={imageSrc}
@@ -32,17 +32,19 @@ const Card = ({ title, description, imageSrc, link }) => {
         borderTopRadius={8}
       />
 
-        <Heading fontSize={'24px'} fontFamily={'Anta'} fontWeight={500}>{title}</Heading>
+      <Heading fontSize={"20px"} fontFamily={"Anta"} fontWeight={500}>
+        {title}
+      </Heading>
 
-        <Text>{description}</Text>
+      <Text fontFamily={"Karla"}>{description}</Text>
 
-        <HStack>
-          <FontAwesomeIcon icon={faArrowRight} />
+      <HStack>
+        <FontAwesomeIcon icon={faArrowRight} />
 
-          <LinkOverlay href={link} isExternal>
-            Learn More
-          </LinkOverlay>
-        </HStack>
+        <LinkOverlay href={link} isExternal>
+          Learn More
+        </LinkOverlay>
+      </HStack>
     </LinkBox>
   );
 };
