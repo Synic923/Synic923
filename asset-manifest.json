@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Synic-dx/static/css/main.ce9736c3.css",
-    "main.js": "/Synic-dx/static/js/main.6110fca2.js",
+    "main.js": "/Synic-dx/static/js/main.2497d9d3.js",
     "static/js/453.bb257cf5.chunk.js": "/Synic-dx/static/js/453.bb257cf5.chunk.js",
     "static/media/Version-Control.png": "/Synic-dx/static/media/Version-Control.d96383fbaf2e01724a1a.png",
     "static/media/Javascript.png": "/Synic-dx/static/media/Javascript.955065d34c1038ed9708.png",
@@ -18,11 +18,11 @@
     "static/media/karla-latin-ext-400-normal.woff2": "/Synic-dx/static/media/karla-latin-ext-400-normal.c3ad5b4ac05ab9d66dc6.woff2",
     "index.html": "/Synic-dx/index.html",
     "main.ce9736c3.css.map": "/Synic-dx/static/css/main.ce9736c3.css.map",
-    "main.6110fca2.js.map": "/Synic-dx/static/js/main.6110fca2.js.map",
+    "main.2497d9d3.js.map": "/Synic-dx/static/js/main.2497d9d3.js.map",
     "453.bb257cf5.chunk.js.map": "/Synic-dx/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce9736c3.css",
-    "static/js/main.6110fca2.js"
+    "static/js/main.2497d9d3.js"
   ]
 }
