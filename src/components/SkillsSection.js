@@ -62,7 +62,7 @@ const SkillsSection = () => {
       id="skills-section"
       minHeight={"80vh"}
     >
-      <VStack gap={'50px'}>
+      <VStack gap={"50px"}>
         <VStack gap={10}>
           <Heading as="h1" fontFamily={"Anta"} fontWeight={400}>
             Skills Attained
@@ -71,47 +71,56 @@ const SkillsSection = () => {
             <CircularProgress
               value={100}
               color="orange.400"
-              thickness="4px"
-              size="100px"
+              thickness="6px"
+              size="7.32vw"
             >
               <CircularProgressLabel>HTML</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={85}
               color="blue.400"
-              thickness="4px"
-              size="100px"
+              thickness="6px"
+              size="7.32vw"
             >
               <CircularProgressLabel>CSS</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={75}
               color="yellow.400"
-              thickness="4px"
-              size="100px"
+              thickness="6px"
+              size="7.32vw"
             >
               <CircularProgressLabel>JS</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={60}
               color="cyan.400"
-              thickness="4px"
-              size="100px"
+              thickness="6px"
+              size="7.32vw"
             >
               <CircularProgressLabel>React</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={75}
               color="pink.400"
-              thickness="4px"
-              size="100px"
+              thickness="6px"
+              size="7.32vw"
             >
               <CircularProgressLabel>Figma</CircularProgressLabel>
             </CircularProgress>
           </HStack>
         </VStack>
 
-        <Accordion allowToggle w={"85vw"}>
+        <Accordion
+          allowToggle
+          w={"90vw"}
+          backgroundColor={"black"}
+          borderColor={"#090A0A"}
+          borderRadius={"20px"}
+          boxShadow={
+            "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
+          }
+        >
           <AccordionItem>
             <h2>
               <AccordionButton p={5}>
@@ -128,7 +137,7 @@ const SkillsSection = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel p={5}>
+            <AccordionPanel p={8}>
               <Box
                 display="grid"
                 gridTemplateColumns="repeat(3,minmax(0,1fr))"
