@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "/Synic-dx/static/css/main.aeb4d985.css",
-    "main.js": "/Synic-dx/static/js/main.886ea5aa.js",
-    "static/js/453.9415623e.chunk.js": "/Synic-dx/static/js/453.9415623e.chunk.js",
+    "main.css": "/Synic-dx/static/css/main.ce9736c3.css",
+    "main.js": "/Synic-dx/static/js/main.6110fca2.js",
+    "static/js/453.bb257cf5.chunk.js": "/Synic-dx/static/js/453.bb257cf5.chunk.js",
+    "static/media/Version-Control.png": "/Synic-dx/static/media/Version-Control.d96383fbaf2e01724a1a.png",
+    "static/media/Javascript.png": "/Synic-dx/static/media/Javascript.955065d34c1038ed9708.png",
+    "static/media/HTML&CSS.png": "/Synic-dx/static/media/HTML&CSS.8d90bfbe368ea4602dbd.png",
+    "static/media/React.png": "/Synic-dx/static/media/React.0f9c294b640507690c97.png",
+    "static/media/UIUX.png": "/Synic-dx/static/media/UIUX.c42280a8678998b5251a.png",
     "static/media/littleLemon.png": "/Synic-dx/static/media/littleLemon.8607444c18a469ba39c8.png",
     "static/media/ePiano.png": "/Synic-dx/static/media/ePiano.5a4beb9c97612f5b08e8.png",
     "static/media/Anta-Regular.ttf": "/Synic-dx/static/media/Anta-Regular.0e0da7a3dc95e085b230.ttf",
     "static/media/blackjack.png": "/Synic-dx/static/media/blackjack.de22dd5fa5c0465d5e22.png",
+    "static/media/karla-latin-400-normal.woff": "/Synic-dx/static/media/karla-latin-400-normal.0a54f1fd213b2cd581b9.woff",
+    "static/media/karla-latin-400-normal.woff2": "/Synic-dx/static/media/karla-latin-400-normal.c5d7ce15a17c6687f399.woff2",
+    "static/media/karla-latin-ext-400-normal.woff": "/Synic-dx/static/media/karla-latin-ext-400-normal.4954f37545f88dbd2246.woff",
+    "static/media/karla-latin-ext-400-normal.woff2": "/Synic-dx/static/media/karla-latin-ext-400-normal.c3ad5b4ac05ab9d66dc6.woff2",
     "index.html": "/Synic-dx/index.html",
-    "main.aeb4d985.css.map": "/Synic-dx/static/css/main.aeb4d985.css.map",
-    "main.886ea5aa.js.map": "/Synic-dx/static/js/main.886ea5aa.js.map",
-    "453.9415623e.chunk.js.map": "/Synic-dx/static/js/453.9415623e.chunk.js.map"
+    "main.ce9736c3.css.map": "/Synic-dx/static/css/main.ce9736c3.css.map",
+    "main.6110fca2.js.map": "/Synic-dx/static/js/main.6110fca2.js.map",
+    "453.bb257cf5.chunk.js.map": "/Synic-dx/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aeb4d985.css",
-    "static/js/main.886ea5aa.js"
+    "static/css/main.ce9736c3.css",
+    "static/js/main.6110fca2.js"
   ]
 }
