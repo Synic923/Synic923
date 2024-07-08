@@ -8,7 +8,7 @@ body {
   background-color: black !important;
   user-select: none;
   -webkit-user-select: none;
-  overflow-x: hidden;
+  overflow-x: none;
   scroll-behavior: smooth;
   font-family: Anta, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -71,4 +71,8 @@ code {
 #avatar:hover {
   outline: var(--b) solid var(--c);
   outline-offset: var(--g);
+}
+
+main {
+  max-width: 100vw;
 }

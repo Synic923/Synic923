@@ -31,7 +31,7 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       justifyContent="center"
-      alignItems="center"
+      alignContent="center"
       isDarkBackground
       backgroundColor="black"
       backgroundImage="url('https://raw.githubusercontent.com/Synic-dx/Synic-dx/react/src/images/neonblack.jpg')"

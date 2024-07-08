@@ -36,7 +36,11 @@ const Header = () => {
   };
 
   return (
-    <Box
+    <HStack
+      px={{ base: 6, md: 10, lg: 16 }}
+      py={4}
+      justifyContent="space-between"
+      alignItems="center"
       position="fixed"
       top={0}
       left={0}
@@ -44,49 +48,42 @@ const Header = () => {
       backgroundColor="black"
       color="white"
       zIndex="10"
+      w={'100vw'}
     >
-      <Box maxWidth="1280px" margin="0 auto">
-        <HStack
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <nav>
-            {socials.map((social) => (
-              <a
-                key={social.icon}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ marginLeft: "30px" }}
-                className="hoverAnimation"
-              >
-                <FontAwesomeIcon icon={social.icon} size="xl" />
-              </a>
-            ))}
-          </nav>
-          <nav>
-            <HStack spacing={8}>
-              <a
-                onClick={handleClick("projects")}
-                href="#projects-section"
-                className="hoverAnimation"
-              >
-                Projects
-              </a>
-              <a
-                onClick={handleClick("skills")}
-                href="#skills-section"
-                className="hoverAnimation"
-              >
-                Skills
-              </a>
-            </HStack>
-          </nav>
+      <nav>
+        <HStack gap={{ base: 4, md: 6}}>
+          {socials.map((social) => (
+            <a
+              key={social.icon}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hoverAnimation"
+            >
+              <FontAwesomeIcon icon={social.icon} size="xl" />
+            </a>
+          ))}
         </HStack>
-      </Box>
-    </Box>
+      </nav>
+      <nav>
+        <HStack gap={{ base: 4, md: 6}}>
+          <a
+            onClick={handleClick("projects")}
+            href="#projects-section"
+            className="hoverAnimation"
+          >
+            Projects
+          </a>
+          <a
+            onClick={handleClick("skills")}
+            href="#skills-section"
+            className="hoverAnimation"
+          >
+            Skills
+          </a>
+        </HStack>
+      </nav>
+    </HStack>
   );
 };
 
