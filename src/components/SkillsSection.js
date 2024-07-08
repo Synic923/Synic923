@@ -72,7 +72,7 @@ const SkillsSection = () => {
               value={100}
               color="orange.400"
               thickness="6px"
-              size="calc(50px + 3.6vw)"
+              size="calc(30px + 5.4vw)"
             >
               <CircularProgressLabel>HTML</CircularProgressLabel>
             </CircularProgress>
@@ -80,7 +80,7 @@ const SkillsSection = () => {
               value={85}
               color="blue.400"
               thickness="6px"
-              size="calc(50px + 3.6vw)"
+              size="calc(30px + 5.4vw)"
             >
               <CircularProgressLabel>CSS</CircularProgressLabel>
             </CircularProgress>
@@ -88,7 +88,7 @@ const SkillsSection = () => {
               value={75}
               color="yellow.400"
               thickness="6px"
-              size="calc(50px + 3.6vw)"
+              size="calc(30px + 5.4vw)"
             >
               <CircularProgressLabel>JS</CircularProgressLabel>
             </CircularProgress>
@@ -96,7 +96,7 @@ const SkillsSection = () => {
               value={60}
               color="cyan.400"
               thickness="6px"
-              size="calc(50px + 3.6vw)"
+              size="calc(30px + 5.4vw)"
             >
               <CircularProgressLabel>React</CircularProgressLabel>
             </CircularProgress>
@@ -104,7 +104,7 @@ const SkillsSection = () => {
               value={75}
               color="pink.400"
               thickness="6px"
-              size="calc(50px + 3.6vw)"
+              size="calc(30px + 5.4vw)"
             >
               <CircularProgressLabel>Figma</CircularProgressLabel>
             </CircularProgress>
@@ -140,7 +140,10 @@ const SkillsSection = () => {
             <AccordionPanel p={8}>
               <Box
                 display="grid"
-                gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, minmax(0, 1fr))" }}
+                gridTemplateColumns={{
+                  base: "repeat(1, 1fr)",
+                  md: "repeat(3, minmax(0, 1fr))",
+                }}
                 gridGap={8}
                 mb={4}
               >
