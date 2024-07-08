@@ -60,7 +60,7 @@ const SkillsSection = () => {
       backgroundColor="#090A0A"
       p={"8%"}
       id="skills-section"
-      minHeight={"80vh"}
+      minHeight={"50vh"}
     >
       <VStack gap={"50px"}>
         <VStack gap={10}>
