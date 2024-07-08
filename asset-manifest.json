@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Synic-dx/static/css/main.0a7a2b5d.css",
+    "main.css": "/Synic-dx/static/css/main.8a0d0844.css",
     "main.js": "/Synic-dx/static/js/main.33b8ef8a.js",
     "static/js/453.bb257cf5.chunk.js": "/Synic-dx/static/js/453.bb257cf5.chunk.js",
     "static/media/Version-Control.png": "/Synic-dx/static/media/Version-Control.d96383fbaf2e01724a1a.png",
@@ -17,12 +17,12 @@
     "static/media/karla-latin-ext-400-normal.woff": "/Synic-dx/static/media/karla-latin-ext-400-normal.4954f37545f88dbd2246.woff",
     "static/media/karla-latin-ext-400-normal.woff2": "/Synic-dx/static/media/karla-latin-ext-400-normal.c3ad5b4ac05ab9d66dc6.woff2",
     "index.html": "/Synic-dx/index.html",
-    "main.0a7a2b5d.css.map": "/Synic-dx/static/css/main.0a7a2b5d.css.map",
+    "main.8a0d0844.css.map": "/Synic-dx/static/css/main.8a0d0844.css.map",
     "main.33b8ef8a.js.map": "/Synic-dx/static/js/main.33b8ef8a.js.map",
     "453.bb257cf5.chunk.js.map": "/Synic-dx/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a7a2b5d.css",
+    "static/css/main.8a0d0844.css",
     "static/js/main.33b8ef8a.js"
   ]
 }
