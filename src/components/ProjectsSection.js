@@ -9,7 +9,7 @@ const projects = [
     description:
       "3-Octave Online Piano Player Optimized For Keyboard Layouts- Made with Vanilla JS",
     getImageSrc: () => require("../images/ePiano.png"),
-    link: "https://synic-dx.github.io/ePiano/",
+    link: "https://playepiano.vercel.app/",
   },
   {
     title: "blackJack",
