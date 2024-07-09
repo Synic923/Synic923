@@ -1,6 +1,6 @@
 # Hi, I'm Synic
 
-Student @ MERN Stack.
+Student
 
 ### Links & Profiles
 
