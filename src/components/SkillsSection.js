@@ -54,6 +54,10 @@ const certificates = [
   },
 ];
 const SkillsSection = () => {
+
+  const CircularProgressSize = "calc(30px + 5.4vw)";
+  const CircularProgressThickness = "6px";
+
   return (
     <FullScreenSection
       isDarkBackground
@@ -71,40 +75,40 @@ const SkillsSection = () => {
             <CircularProgress
               value={100}
               color="orange.400"
-              thickness="6px"
-              size="calc(30px + 5.4vw)"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
             >
               <CircularProgressLabel>HTML</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={85}
               color="blue.400"
-              thickness="6px"
-              size="calc(30px + 5.4vw)"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
             >
               <CircularProgressLabel>CSS</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={75}
               color="yellow.400"
-              thickness="6px"
-              size="calc(30px + 5.4vw)"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
             >
               <CircularProgressLabel>JS</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={60}
               color="cyan.400"
-              thickness="6px"
-              size="calc(30px + 5.4vw)"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
             >
               <CircularProgressLabel>React</CircularProgressLabel>
             </CircularProgress>
             <CircularProgress
               value={75}
               color="pink.400"
-              thickness="6px"
-              size="calc(30px + 5.4vw)"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
             >
               <CircularProgressLabel>Figma</CircularProgressLabel>
             </CircularProgress>
