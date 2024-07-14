@@ -52,6 +52,13 @@ const certificates = [
     getImageSrc: () => require("../images/UIUX.png"),
     link: "https://coursera.org/share/123b44b509bf975ed8351d4e371988c2",
   },
+  {
+    title: "Meta Frontend Professional Specialization",
+    description:
+      "This 9-course program prepares learners for an entry-level career as a front-end developer.",
+    getImageSrc: () => require("../images/final.png"),
+    link: "https://coursera.org/share/78ae87ea933cca22f577fb8aca0156eb",
+  }
 ];
 const SkillsSection = () => {
 
