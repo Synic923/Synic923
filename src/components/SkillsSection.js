@@ -11,10 +11,18 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  Image
 } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Card from "./Card";
 import "@fontsource/karla";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faFigma,
+  faNodeJs,
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const certificates = [
   {
@@ -58,12 +66,12 @@ const certificates = [
       "This 9-course program prepares learners for an entry-level career as a front-end developer.",
     getImageSrc: () => require("../images/final.png"),
     link: "https://coursera.org/share/78ae87ea933cca22f577fb8aca0156eb",
-  }
+  },
 ];
 const SkillsSection = () => {
-
-  const CircularProgressSize = "calc(30px + 5.4vw)";
+  const CircularProgressSize = "calc(30px + 6.4vw)";
   const CircularProgressThickness = "6px";
+  const vercelImage = "../images/Vercel.svg";
 
   return (
     <FullScreenSection
@@ -85,39 +93,53 @@ const SkillsSection = () => {
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
-              <CircularProgressLabel>React</CircularProgressLabel>
+              <CircularProgressLabel>
+                <FontAwesomeIcon icon={faReact} color="cyan" size="2x" />
+              </CircularProgressLabel>
             </CircularProgress>
+
             <CircularProgress
               value={75}
               color="pink.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
-              <CircularProgressLabel>Figma</CircularProgressLabel>
+              <CircularProgressLabel>
+                <FontAwesomeIcon icon={faFigma} color="pink" size="2x" />
+              </CircularProgressLabel>
             </CircularProgress>
+
             <CircularProgress
               value={75}
-              color="black.400"
+              color="black"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
-              <CircularProgressLabel>NextJS</CircularProgressLabel>
+              <CircularProgressLabel>
+                <Image src={vercelImage} alt={'NextJS'} w={'100%'}/>
+              </CircularProgressLabel>
             </CircularProgress>
+
             <CircularProgress
               value={60}
               color="yellow.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
-              <CircularProgressLabel>MongoDB</CircularProgressLabel>
+              <CircularProgressLabel>
+                <FontAwesomeIcon icon={faDatabase} color="yellow" size="2x" />
+              </CircularProgressLabel>
             </CircularProgress>
+
             <CircularProgress
               value={60}
               color="green.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
-              <CircularProgressLabel>NodeJS</CircularProgressLabel>
+              <CircularProgressLabel>
+                <FontAwesomeIcon icon={faNodeJs} color="green" size="2x" />
+              </CircularProgressLabel>
             </CircularProgress>
           </HStack>
         </VStack>
