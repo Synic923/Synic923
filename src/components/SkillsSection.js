@@ -69,7 +69,7 @@ const certificates = [
   },
 ];
 const SkillsSection = () => {
-  const CircularProgressSize = "calc(30px + 6.4vw)";
+  const CircularProgressSize = "calc(30px + 5.6vw)";
   const CircularProgressThickness = "6px";
   const vercelImage = "../images/Vercel.svg";
 
@@ -110,18 +110,7 @@ const SkillsSection = () => {
             </CircularProgress>
 
             <CircularProgress
-              value={75}
-              color="black"
-              thickness={CircularProgressThickness}
-              size={CircularProgressSize}
-            >
-              <CircularProgressLabel>
-                <Image src={vercelImage} alt={'NextJS'} w={'100%'}/>
-              </CircularProgressLabel>
-            </CircularProgress>
-
-            <CircularProgress
-              value={60}
+              value={50}
               color="yellow.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
