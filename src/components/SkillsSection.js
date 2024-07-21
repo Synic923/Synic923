@@ -80,31 +80,7 @@ const SkillsSection = () => {
           </Heading>
           <HStack>
             <CircularProgress
-              value={100}
-              color="orange.400"
-              thickness={CircularProgressThickness}
-              size={CircularProgressSize}
-            >
-              <CircularProgressLabel>HTML</CircularProgressLabel>
-            </CircularProgress>
-            <CircularProgress
-              value={85}
-              color="blue.400"
-              thickness={CircularProgressThickness}
-              size={CircularProgressSize}
-            >
-              <CircularProgressLabel>CSS</CircularProgressLabel>
-            </CircularProgress>
-            <CircularProgress
               value={75}
-              color="yellow.400"
-              thickness={CircularProgressThickness}
-              size={CircularProgressSize}
-            >
-              <CircularProgressLabel>JS</CircularProgressLabel>
-            </CircularProgress>
-            <CircularProgress
-              value={60}
               color="cyan.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
@@ -118,6 +94,30 @@ const SkillsSection = () => {
               size={CircularProgressSize}
             >
               <CircularProgressLabel>Figma</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={75}
+              color="black.400"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
+            >
+              <CircularProgressLabel>NextJS</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={60}
+              color="yellow.400"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
+            >
+              <CircularProgressLabel>MongoDB</CircularProgressLabel>
+            </CircularProgress>
+            <CircularProgress
+              value={60}
+              color="green.400"
+              thickness={CircularProgressThickness}
+              size={CircularProgressSize}
+            >
+              <CircularProgressLabel>NodeJS</CircularProgressLabel>
             </CircularProgress>
           </HStack>
         </VStack>
@@ -158,13 +158,13 @@ const SkillsSection = () => {
                 gridGap={8}
                 mb={4}
               >
-                {certificates.map((project) => (
+                {certificates.map((certificate) => (
                   <Card
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    imageSrc={project.getImageSrc()}
-                    link={project.link}
+                    key={certificate.title}
+                    title={certificate.title}
+                    description={certificate.description}
+                    imageSrc={certificate.getImageSrc()}
+                    link={certificate.link}
                   />
                 ))}
               </Box>
